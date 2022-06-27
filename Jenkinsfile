@@ -1,7 +1,7 @@
 stage('Run tests'){
 if(isUnix()){
-sh "mvn clean test -Dcucumber.filter.tags=”@smoke”"
+sh "mvn clean test -Dcucumber.filter.tags="@smoke""
 } else {
-bat "mvn clean test -Dcucumber.filter.tags=”@smoke”"
+bat "mvn clean test -Dcucumber.filter.tags="@smoke""
 }
 }
